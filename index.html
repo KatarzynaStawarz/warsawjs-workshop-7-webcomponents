@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img src="http://placeskull.com/50/50">
+    <h1>WarsawJS Workshop</h1>
+    <div></div>
+    <script>
+//       class TshirtComponent extends HTMLElement {
+//           constructor() {
+//               super();
+//               console.log('Tshirt')
+//           }
+//       }
+//       window.customElements.define('tshirt-component', TshirtComponent);
+        let a = document.createDocumentFragment();
+        console.log(a);
+        let b = document.querySelector('div');
+        b.appendChild(a);
+    </script>
+    <tshirt-component></tshirt-component>
+</body>
+</html>
