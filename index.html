@@ -9,18 +9,13 @@
     <h1>WarsawJS Workshop</h1>
     <div></div>
     <script>
-//       class TshirtComponent extends HTMLElement {
-//           constructor() {
-//               super();
-//               console.log('Tshirt')
-//           }
-//       }
-//       window.customElements.define('tshirt-component', TshirtComponent);
-        let a = document.createDocumentFragment();
-        console.log(a);
-        let b = document.querySelector('div');
-        b.appendChild(a);
+        let $div = document.querySelector('div');
+        $div.addEventListener('workshop-started', ()=>{
+            console.log("Workshop was started");
+        })
+        let evt = new CustomEvent('workshop-started');
+        $div.dispatchEvent(evt);
     </script>
-    <tshirt-component></tshirt-component>
+    
 </body>
 </html>
